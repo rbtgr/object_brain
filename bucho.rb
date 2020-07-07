@@ -5,7 +5,11 @@ class Bucho < Shain
     puts '部長が面倒そうに立ち上がりました'
   end
 
-  def calculate_salary(base)
-    base * 3
+  # def calculate_salary(base)
+  #   base * 3
+  # end
+
+  def base
+    @base * 3
   end
 end

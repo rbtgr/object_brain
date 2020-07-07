@@ -5,7 +5,16 @@ class Shunin < Shain
     puts '主任が素早く立ち上がりました'
   end
 
-  def calculate_salary(base)
-    base * 2 + 1
+  # def calculate_salary(base)
+  #   base * 2 + 1
+  # end
+
+  def base
+    @base * 2
   end
+
+  def addition
+    1
+  end
+
 end

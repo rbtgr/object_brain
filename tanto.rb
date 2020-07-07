@@ -6,7 +6,7 @@ class Tanto < Shain
     puts '担当は慌てて起立しました'
   end
 
-  def calculate_salary(base)
+  def calculate_salary
     base
   end
 end
