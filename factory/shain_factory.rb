@@ -2,6 +2,8 @@ require_relative 'shain'
 
 class ShainFactory
   def create(type, baseSalary)
+
+    # メタプログラミングを使わない版
     # shain = nil
     # if type == 'Tanto'
     #   shain = Tanto.new(baseSalary)
@@ -14,6 +16,8 @@ class ShainFactory
     # end
     # shain
 
+
+    # メタプログラミング版
     eval "#{type}.new(baseSalary)"
 
   end
