@@ -46,7 +46,6 @@ end
 class Torishimariyaku < Shain
   def standup
     '踏ん反り返って立ち上がりました'
-
   end
 
   def base
