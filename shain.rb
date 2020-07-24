@@ -11,12 +11,7 @@ class Shain
   def standup
     puts "起立"
   end
-
-  # def calculate_salary(base)
-  #   base
-  # end
 end
-
 
 class Tanto < Shain
   def standup

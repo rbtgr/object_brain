@@ -1,7 +1,7 @@
 # -*- cording: utf-8 -*-
 require_relative 'shain_factory'
 
-describe 'Refactored ShainFactory' do
+describe ShainFactory do
   let(:shain_factory) {ShainFactory.new}
 
   example 'Tantoオブジェクト生成しているかをチェックする' do
