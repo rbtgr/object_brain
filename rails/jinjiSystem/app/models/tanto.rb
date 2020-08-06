@@ -1,5 +1,5 @@
 class Tanto < Shain
-  def Yakusyoku
+  def yakusyoku
     '担当'
   end
 

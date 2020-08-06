@@ -1,5 +1,5 @@
 class ShainsController < ApplicationController
-  before_action :set_shain, only: [:show, :edit, :update, :destroy]
+  before_action :set_shain, only: [:show, :edit, :update, :destroy, :standup] # standup
 
   # GET /shains
   # GET /shains.json
@@ -61,6 +61,11 @@ class ShainsController < ApplicationController
     end
   end
 
+  # 追加
+  def standup
+
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_shain
@@ -69,6 +74,6 @@ class ShainsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def shain_params
-      params.require(:shain).permit(:name, :yakusyoku, :kihonkyu)
+      params.require(:shain).permit(:name, :type, :kihonkyu)  # type追加
     end
 end

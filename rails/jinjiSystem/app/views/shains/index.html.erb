@@ -16,7 +16,7 @@
     <% @shains.each do |shain| %>
       <tr>
         <td><%= shain.name %></td>
-        <td><%= shain.yakusyoku %></td>
+        <td><%= shain.type %></td>
         <td><%= shain.kihonkyu %></td>
         <td><%= link_to 'Show', shain.becomes(Shain) %></td>
         <td><%= link_to 'Edit', edit_shain_path(shain) %></td>

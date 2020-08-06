@@ -1,4 +1,6 @@
-<%= form_with(model: shain, local: true) do |form| %>
+<%#= form_with(model: shain, local: true) do |form| %>
+<%= form_for(@shain.becomes(Shain)) do |form| %>
+
   <% if shain.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(shain.errors.count, "error") %> prohibited this shain from being saved:</h2>
@@ -17,8 +19,8 @@
   </div>
 
   <div class="field">
-    <%= form.label :yakusyoku %>
-    <%= form.text_field :yakusyoku %>
+    <%= form.label :type %>
+    <%= form.text_field :type %>
   </div>
 
   <div class="field">
